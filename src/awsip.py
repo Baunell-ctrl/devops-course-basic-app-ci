@@ -23,5 +23,6 @@ def find_ip(ip_range_data, ip_to_find):
   """Finds the AWS IP range that contains the given IP address."""
   return [prefix for prefix in ip_range_data if ipaddress.ip_address(ip_to_find) in ipaddress.ip_network(prefix['ip_prefix'])]
 
+
 def find_aws_ip(ip_to_find):
   return find_ip(download_aws_ip_set(), ip_to_find)
