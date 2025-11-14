@@ -1,0 +1,4 @@
+[flake8]
+ignore = F401, E111, E302, E501, W292, W391  # Ignore les erreurs listées
+max-line-length = 120                       # Autorise des lignes plus longues
+exclude = .git,__pycache__,venv             # Ignore certains dossiers

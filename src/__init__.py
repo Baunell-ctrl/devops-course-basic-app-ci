@@ -1,1 +1,2 @@
-from awsip import  download_aws_ip_set, find_aws_ip
+from awsip import find_ip, download_aws_ip_set, find_aws_ip
+__all__=['find_ip', 'download_aws_ip_set', 'find_aws_ip']
