@@ -27,7 +27,7 @@ jobs:
           pip install flake8 nose junit-xml   
 
       - name: Lint with flake8
-        run: flake8 .                  # Vérifie le code Python (style, erreurs…)
+        run: flake8 src/                
 
       - name: Run tests with nosetests (JUnit report)
         run: |
